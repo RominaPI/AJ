@@ -11,6 +11,8 @@ namespace Ajedrez3
     public partial class Form1 : Form
     {
         private PictureBox[,] tablero;
+        public delegate void TargetElementClickedEventHandler(object sender, EventArgs e);
+        public event TargetElementClickedEventHandler TargetElementClicked;
 
         public Form1()
         {
@@ -121,10 +123,13 @@ namespace Ajedrez3
             picture = pieza_a_mover;
             picture2 = pieza_destino;
 
-            tablero[filaHacia, columnaHacia] = picture;
+            tablero[filaHacia, columnaHacia].Image = picture.Image;
             tablero[filaHacia, columnaHacia].Location = picture2.Location;
-            tablero[filaDesde, columnaDesde] = pieza_destino;
+            tablero[filaDesde, columnaDesde].Image = pieza_destino.Image;
+            tablero[filaDesde, columnaDesde].Image = null;
             tablero[filaDesde, columnaDesde].Location = picture.Location;
+            this.Controls.Add(picture);
+            //picture2.Click += TargetElementClicked;
         }
 
         protected bool RangoPermitido(int filaDesde, int columnaDesde, int filaHacia, int columnaHacia)
@@ -149,6 +154,7 @@ namespace Ajedrez3
             // Obtener la posición actual del PeonN1 en el tablero
             int filaDesde = tableLayoutPanel1.GetPositionFromControl(PeonN1).Row;
             int columnaDesde = tableLayoutPanel1.GetPositionFromControl(PeonN1).Column;
+            TargetElementClicked?.Invoke(this, EventArgs.Empty);
 
             // Calcular la fila hacia la que se quiere mover (en este caso, puede ser una o dos filas más abajo)
             int filaHacia = filaDesde + 1; // Mover una casilla por defecto

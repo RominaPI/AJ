@@ -8,24 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Romina Pavon\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\angel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Romina Pavon\\source\\repos\\C#\\Ajedrez3\\Ajedrez3\\Ajedrez3.csproj",
+      "projectUniqueName": "C:\\Users\\angel\\Source\\Repos\\AJ\\Ajedrez3\\Ajedrez3\\Ajedrez3.csproj",
       "projectName": "Ajedrez3",
-      "projectPath": "C:\\Users\\Romina Pavon\\source\\repos\\C#\\Ajedrez3\\Ajedrez3\\Ajedrez3.csproj",
-      "packagesPath": "C:\\Users\\Romina Pavon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Romina Pavon\\source\\repos\\C#\\Ajedrez3\\Ajedrez3\\obj\\",
+      "projectPath": "C:\\Users\\angel\\Source\\Repos\\AJ\\Ajedrez3\\Ajedrez3\\Ajedrez3.csproj",
+      "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\angel\\Source\\Repos\\AJ\\Ajedrez3\\Ajedrez3\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Romina Pavon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
